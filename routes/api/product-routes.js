@@ -7,12 +7,26 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
+
+  // Product.get(req.body)
+  // .then((product) => {
+  //   res.render('product', {product_name})
+  // })
+
+  const prodsData = Product.findAll().catch((err) => {
+    res.json(err_)
+  })
+  const products = prodsData.map((product_name) => product_name.get({plain:true}))
+  res.render('product', {products})
 });
 
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+  const prodData = Product.findByPk(req.params.id)
+  const product = prodData.get({ plain: true})
+  res.render('product', {product})
 });
 
 // create new product
@@ -94,6 +108,16 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
+  Product.destroy({
+    where: {product_id : req.params.id}
+  })
+  .then(function(rowDeleted) {
+    if (rowDeleted === 1) {
+      alert('Deleted successfully')
+    }
+  }, function(err) {
+    console.log(err)
+  })
 });
 
 module.exports = router;
