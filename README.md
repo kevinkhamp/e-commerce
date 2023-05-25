@@ -1,15 +1,16 @@
 # e-commerce
 
 ## Description
+
 This application is to showcase of joined databases, sequelize, and express. It shows how a manager or an employee can get data regarding their stock, make changes to the products, categories, etc., and delete those said items.
+
+## Visuals
+
+[TBD]
 
 ## Github Repo
 
 https://github.com/shimpfierie/e-commerce
-
-## Group Presentation
-
-[Google Slides](https://docs.google.com/presentation/d/1qRpD5RI6PBjzRn_QjX9RpiLesv6wshiSgdjEA7yMgfY/edit#slide=id.p)
 
 ## Collaborators
 
