@@ -12,14 +12,6 @@ This application is to showcase of joined databases, sequelize, and express. It 
 
 https://github.com/shimpfierie/e-commerce
 
-## Collaborators
-
-- Marni Luka
-- Kevin Khamphounvong
-- Leo Liu
-- Sal Monzoor
-- Luc Martin
-
 ## Technologies Used
 
 Insomnia, express, node.js, mySQL, javascript
