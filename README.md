@@ -6,7 +6,7 @@ This application is to showcase of joined databases, sequelize, and express. It 
 
 ## Visuals
 
-[!ecommerce](https://youtu.be/pOoal1v2E6c)
+https://youtu.be/pOoal1v2E6c
 
 ## Github Repo
 
